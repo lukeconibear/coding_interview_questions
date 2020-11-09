@@ -10,6 +10,7 @@ install:
   - conda update -q conda
   - conda info -a
   - conda create -q -n coding_interview_questions python=$TRAVIS_PYTHON_VERSION numpy pandas
+#  - conda env create --name coding_interview_questions --file=coding_interview_questions.yml
   - conda activate coding_interview_questions
 
 script:
