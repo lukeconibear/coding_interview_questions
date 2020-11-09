@@ -13,4 +13,4 @@ install:
   - conda activate coding_interview_questions
 
 script:
-  python test_fibonacci.py
+  python ./python/test_fibonacci.py
