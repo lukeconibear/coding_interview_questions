@@ -5,7 +5,7 @@ install:
   - pip install codecov coverage pytest-cov
 
 script:
-  - coverage run -m py.test test_fibonacci.py --cov=fibonacci.py
+  - coverage run -m py.test tests/test_fibonacci.py --cov=questions/fibonacci.py
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
