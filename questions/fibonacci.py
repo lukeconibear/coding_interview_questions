@@ -1,6 +1,6 @@
 def fib_recursive(n):  # time O(2^n), space O(n as n calls to fib on call stack)
     if n == 0:
-        return None
+        return 0
     elif n == 1:
         return 0
     elif n == 2:
@@ -10,7 +10,7 @@ def fib_recursive(n):  # time O(2^n), space O(n as n calls to fib on call stack)
 
 def fib_iterative(n):  # time O(n), space O(1)
     if n == 0:
-        return None
+        return 0
     elif n == 1:
         return 0
     elif n == 2:
