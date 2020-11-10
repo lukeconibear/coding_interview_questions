@@ -1,23 +1,11 @@
 language: python
-codecov: true
 python:
   - "3.8"
 install:
-  - pip install codecov
-  - pip install pytest-cov
-#  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
-#  - bash miniconda.sh -b -p $HOME/miniconda
-#  - source "$HOME/miniconda/etc/profile.d/conda.sh"
-#  - hash -r
-#  - conda config --set always_yes yes --set changeps1 no
-#  - conda update -q conda
-#  - conda info -a
-#  - conda create -q -n coding_interview_questions python=$TRAVIS_PYTHON_VERSION numpy pandas
-#  - conda env create --name coding_interview_questions --file=coding_interview_questions.yml
-#  - conda activate coding_interview_questions
+  - pip install codecov coverage pytest-cov
 
 script:
-  - coverage run -m py.test python/test_fibonacci.py --cov=fibonacci.py
+  - coverage run -m py.test test_fibonacci.py --cov=fibonacci.py
 
 after_success:
-  - codecov
+  - bash <(curl -s https://codecov.io/bash)
