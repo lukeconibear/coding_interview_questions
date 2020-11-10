@@ -16,8 +16,7 @@ install:
 #  - conda activate coding_interview_questions
 
 script:
-  - python ./python/test_fibonacci.py
-  - coverage run tests.py
+  - coverage run ./python/tests.py
 
 after_success:
   - codecov
