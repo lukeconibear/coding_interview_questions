@@ -7,8 +7,8 @@ install:
   - pip install codecov
 
 script:
-  - coverage run -m unittest tests/test_fibonacci.py
-  - coverage run -m unittest tests/test_two_sum.py
+  - coverage run -m unittest tests/python/test_fibonacci.py
+  - coverage run -m unittest tests/python/test_two_sum.py
 
 after_success:
   - codecov
