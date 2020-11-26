@@ -20,6 +20,7 @@ matrix:
         - npm install codecov --save-dev
         - npm install -g istanbul
       script:
-        - npm test
+        - npm test --cover
         - istanbul cover tests/javascript/test_fibonacci.js
-        - ./node_modules/.bin/codecov
+      after_success:
+        - codecov
