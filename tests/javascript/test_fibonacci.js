@@ -1,6 +1,6 @@
-const program = require('../../questions/javascript/fibonacci');
+const fibonacci = require('../../questions/javascript/fibonacci');
 const chai = require('chai');
 
-chai.expect(program.getNthFibBruteForce(6)).to.deep.equal(5);
-chai.expect(program.getNthFibMemoize(6)).to.deep.equal(5);
-chai.expect(program.getNthFibCounter(6)).to.deep.equal(5);
+chai.expect(fibonacci.getNthFibBruteForce(6)).to.deep.equal(5);
+chai.expect(fibonacci.getNthFibMemoize(6)).to.deep.equal(5);
+chai.expect(fibonacci.getNthFibCounter(6)).to.deep.equal(5);
