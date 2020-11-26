@@ -8,8 +8,7 @@ matrix:
         - pip install -U pytest
         - pip install codecov
       script:
-        - coverage run -m unittest tests/python/test_fibonacci.py
-        - coverage run -m unittest tests/python/test_two_sum.py
+        - coverage run -m unittest tests/python/*.py
       after_success:
         - codecov
 
@@ -22,6 +21,6 @@ matrix:
         - npm install -g istanbul
       script:
         - npm test
-        - istanbul cover tests/javascript/test_fibonacci.js
+        - istanbul cover tests/javascript/*.js
       after_success:
        - codecov
