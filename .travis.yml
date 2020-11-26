@@ -12,11 +12,11 @@ matrix:
         - coverage run -m unittest tests/python/test_two_sum.py
       after_success:
         - codecov
-        
+
     - language: node_js
       node_js:
         - "10.19.0"
       before_script:
         - npm install chai
       script:
-        - npm test
+        - npm tests/javascript/test
