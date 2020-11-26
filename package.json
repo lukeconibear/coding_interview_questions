@@ -1,0 +1,15 @@
+{
+    "author": "Luke Conibear <l.a.conibear@leeds.ac.uk>",
+    "name": "coding-interview-questions-javascript",
+    "main": "/questions/javascript/fibonacci",
+    "scripts": {
+        "test": "node /tests/javascript/test_fibonacci.js"
+    },
+    "engines": {
+        "node": ">= 0.4"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "chai": "latest"
+    }
+}
