@@ -18,5 +18,8 @@ matrix:
         - "10.19.0"
       before_script:
         - npm install chai
+        - npm install codecov --save-dev
       script:
         - npm test
+      after_success:
+       - codecov
