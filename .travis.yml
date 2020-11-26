@@ -22,5 +22,4 @@ matrix:
       script:
         - npm test
         - istanbul cover tests/javascript/test_fibonacci.js
-      after_success:
-       - codecov
+        - ./node_modules/.bin/codecov
