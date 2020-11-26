@@ -19,4 +19,4 @@ matrix:
       before_script:
         - npm install chai
       script:
-        - npm tests/javascript/test
+        - npm test

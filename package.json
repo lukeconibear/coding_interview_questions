@@ -3,7 +3,7 @@
     "name": "coding-interview-questions-javascript",
     "main": "/questions/javascript/fibonacci",
     "scripts": {
-        "test": "node /tests/javascript/test_fibonacci.js"
+        "test": "node tests/javascript/test_fibonacci.js"
     },
     "engines": {
         "node": ">= 0.4"
