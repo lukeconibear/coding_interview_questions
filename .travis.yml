@@ -19,7 +19,9 @@ matrix:
       before_script:
         - npm install chai
         - npm install codecov --save-dev
+        - npm install -g istanbul
       script:
         - npm test
+        - istanbul cover test.js
       after_success:
        - codecov

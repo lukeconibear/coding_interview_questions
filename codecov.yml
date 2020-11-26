@@ -6,3 +6,6 @@ coverage:
       default: false
       tests:
         paths: "tests/"
+  parsers:
+    javascript:
+      enable_partials: yes
