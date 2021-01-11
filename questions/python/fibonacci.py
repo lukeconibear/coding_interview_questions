@@ -1,8 +1,6 @@
 class Solution:
     def fib_recursive_brute_force(self, n):  # time O(2^n), space O(n as n calls to fib on call stack)
-        if n == 0:
-            return 0
-        elif n == 1:
+        if n == 0 or n == 1:
             return 0
         elif n == 2:
             return 1
@@ -16,12 +14,11 @@ class Solution:
             return cache[n]
 
     def fib_iterative(self, n):  # time O(n), space O(1)
-        if n == 0:
-            return 0
-        elif n == 1:
+        if n == 0 or n == 1:
             return 0
         elif n == 2:
             return 1
+
         previous = 0
         current = 1
         for _ in range(2, n):

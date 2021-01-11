@@ -21,6 +21,6 @@ matrix:
         - npm install -g istanbul
       script:
         - npm test --cover
-        - istanbul cover tests/javascript/test_fibonacci.js
+        - istanbul cover tests/javascript/*.js
       after_success:
         - codecov
