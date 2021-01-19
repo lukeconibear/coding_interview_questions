@@ -8,7 +8,7 @@ from questions.python.array_is_monotonic import Solution
 
 class Test(unittest.TestCase):
     def test_is_monotonic(self):
-        self.assertTrue(Solution().is_monotonic([-1, -5, -10, -1100, -1100, -1101, -1102, -9001]), True)
+        self.assertEqual(Solution().is_monotonic([-1, -5, -10, -1100, -1100, -1101, -1102, -9001]), True)
 
 
 if __name__ == '__main__':

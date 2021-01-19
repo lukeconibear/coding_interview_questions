@@ -4,11 +4,11 @@ class Solution:
         three_largest.sort()
         for num in array[3:]:
             if num > three_largest[2]:
-                three_largest[1] = three_largest[0]
-                three_largest[2] = three_largest[1]
+                three_largest[0] = three_largest[1]
+                three_largest[1] = three_largest[2]
                 three_largest[2] = num
             elif num > three_largest[1]:
-                three_largest[1] = three_largest[0]
+                three_largest[0] = three_largest[1]
                 three_largest[1] = num
             elif num > three_largest[0]:
                 three_largest[0] = num

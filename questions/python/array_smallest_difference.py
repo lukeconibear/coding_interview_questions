@@ -17,7 +17,7 @@ class Solution:
                 return [num_one, num_two]
 
             if current_difference < smallest_difference:
-                current_difference = smallest_difference
+                smallest_difference = current_difference
                 smallest_pair = [num_one, num_two]
 
         return smallest_pair

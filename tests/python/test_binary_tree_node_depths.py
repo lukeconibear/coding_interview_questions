@@ -17,7 +17,7 @@ class Test(unittest.TestCase):
         head.right = Node(3)
         head.right.left = Node(6)
         head.right.right = Node(7)
-        self.assertTrue(Solution().node_depths(head), 16)
+        self.assertEqual(Solution().node_depths(head), 16)
 
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@ from questions.python.string_run_length_encoding import Solution
 
 class Test(unittest.TestCase):
     def test_run_length_encoding(self):
-        self.assertTrue(Solution().run_length_encoding("AAAAAAAAAAAAABBCCCCDD"), "9A4A2B4C2D")
+        self.assertEqual(Solution().run_length_encoding("AAAAAAAAAAAAABBCCCCDD"), "9A4A2B4C2D")
 
 
 if __name__ == '__main__':

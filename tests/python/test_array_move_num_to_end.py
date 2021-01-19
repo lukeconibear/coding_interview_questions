@@ -8,7 +8,7 @@ from questions.python.array_move_num_to_end import Solution
 
 class Test(unittest.TestCase):
     def test_move_num_to_end(self):
-        self.assertTrue(Solution().move_num_to_end([2, 1, 2, 2, 2, 3, 4, 2], 2), [4, 1, 3, 2, 2, 2, 2, 2])
+        self.assertEqual(Solution().move_num_to_end([2, 1, 2, 2, 2, 3, 4, 2], 2), [4, 1, 3, 2, 2, 2, 2, 2])
 
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@ from questions.python.array_first_duplicate_value import Solution
 
 class Test(unittest.TestCase):
     def test_first_duplicate_value(self):
-        self.assertTrue(Solution().first_duplicate_value([2, 1, 5, 2, 3, 3, 4]), 2)
+        self.assertEqual(Solution().first_duplicate_value([2, 1, 5, 2, 3, 3, 4]), 2)
 
 
 if __name__ == '__main__':

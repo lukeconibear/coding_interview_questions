@@ -16,9 +16,9 @@ class Test(unittest.TestCase):
         head.right = Node(15)
         head.right.right = Node(22)
 
-        self.assertTrue(Solution().in_order_traversal(head, []), [1, 2, 5, 5, 10, 15, 22])
-        self.assertTrue(Solution().pre_order_traversal(head, []), [10, 5, 2, 1, 5, 15, 22])
-        self.assertTrue(Solution().post_order_traversal(head, []), [1, 2, 5, 5, 22, 15, 10])
+        self.assertEqual(Solution().in_order_traversal(head, []), [1, 2, 5, 5, 10, 15, 22])
+        self.assertEqual(Solution().pre_order_traversal(head, []), [10, 5, 2, 1, 5, 15, 22])
+        self.assertEqual(Solution().post_order_traversal(head, []), [1, 2, 5, 5, 22, 15, 10])
 
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@ from questions.python.array_three_sum import Solution
 
 class Test(unittest.TestCase):
     def test_three_number_sum(self):
-        self.assertTrue(Solution().three_number_sum([12, 3, 1, 2, -6, 5, -8, 6], 0), [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]])
+        self.assertEqual(Solution().three_number_sum([12, 3, 1, 2, -6, 5, -8, 6], 0), [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]])
 
 
 if __name__ == '__main__':

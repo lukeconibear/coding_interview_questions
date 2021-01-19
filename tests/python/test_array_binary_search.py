@@ -8,10 +8,10 @@ from questions.python.array_binary_search import Solution
 
 class Test(unittest.TestCase):
     def test_binary_search_recursive(self):
-        self.assertTrue(Solution().binary_search_recursive([0, 1, 21, 33, 45, 45, 61, 71, 72, 73], 33), 3)
+        self.assertEqual(Solution().binary_search_recursive([0, 1, 21, 33, 45, 45, 61, 71, 72, 73], 33), 3)
 
     def test_binary_search_iterative(self):
-        self.assertTrue(Solution().binary_search_iterative([0, 1, 21, 33, 45, 45, 61, 71, 72, 73], 33), 3)
+        self.assertEqual(Solution().binary_search_iterative([0, 1, 21, 33, 45, 45, 61, 71, 72, 73], 33), 3)
 
 if __name__ == '__main__':
     unittest.main()

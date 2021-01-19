@@ -8,7 +8,7 @@ from questions.python.array_product_sum import Solution
 
 class Test(unittest.TestCase):
     def test_product_sum(self):
-        self.assertTrue(Solution().product_sum([5, 2, [7, -1], 3, [6, [-13, 8], 4]]), 12)
+        self.assertEqual(Solution().product_sum([5, 2, [7, -1], 3, [6, [-13, 8], 4]]), 12)
 
 
 if __name__ == '__main__':

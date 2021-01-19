@@ -1,6 +1,6 @@
 class Solution:
     def two_sum_brute_force(self, array, target):  # time O(n^2), space O(1)
-        for index_one in range(len(array) - 1):
+        for index_one in range(len(array)):
             for index_two in range(index_one + 1, len(array)):
                 if array[index_one] + array[index_two] == target and index_one != index_two:
                     return [index_one, index_two]

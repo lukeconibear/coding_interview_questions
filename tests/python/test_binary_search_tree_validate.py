@@ -18,7 +18,7 @@ class Test(unittest.TestCase):
         head.right.left.right = Node(14)
         head.right.right = Node(22)
 
-        self.assertTrue(Solution().validate_bst(head), True)
+        self.assertEqual(Solution().validate_bst(head), True)
 
 
 if __name__ == '__main__':

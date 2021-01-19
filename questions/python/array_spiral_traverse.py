@@ -10,7 +10,7 @@ class Solution:
                 result.append(array[start_row][col])
 
             for row in range(start_row + 1, end_row + 1):
-                result.append(array[end_row][col])
+                result.append(array[row][end_col])
 
             for col in reversed(range(start_col, end_col)):
                 if start_row == end_row: # single row in middle

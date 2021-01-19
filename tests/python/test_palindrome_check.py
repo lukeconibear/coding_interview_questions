@@ -8,7 +8,7 @@ from questions.python.palindrome_check import Solution
 
 class Test(unittest.TestCase):
     def test_is_palindrome(self):
-        self.assertTrue(Solution().is_palindrome('abcdcba'), True)
+        self.assertEqual(Solution().is_palindrome('abcdcba'), True)
 
 
 if __name__ == '__main__':

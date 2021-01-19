@@ -18,7 +18,7 @@ class Test(unittest.TestCase):
         head.left.right.left = Node(10)
         head.right.left = Node(6)
         head.right.right = Node(7)
-        self.assertTrue(Solution().branch_sums(head), [15, 16, 18, 10, 11])
+        self.assertEqual(Solution().branch_sums(head), [15, 16, 18, 10, 11])
 
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@ from questions.python.array_of_products import Solution
 
 class Test(unittest.TestCase):
     def test_products(self):
-        self.assertTrue(Solution().products([5, 1, 4, 2]), [8, 40, 10, 20])
+        self.assertEqual(Solution().products([5, 1, 4, 2]), [8, 40, 10, 20])
 
 
 if __name__ == '__main__':
