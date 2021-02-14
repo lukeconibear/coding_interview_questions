@@ -6,7 +6,7 @@ class Node:
 
 
 class Solution:
-    def in_order_traversal(self, head, result): # time O(n), space O(n)
+    def in_order_traversal(self, head, result):  # time O(n), space O(n)
         if head is not None:
             self.in_order_traversal(head.left, result)
             result.append(head.value)
@@ -14,7 +14,7 @@ class Solution:
 
         return result
 
-    def pre_order_traversal(self, head, result): # time O(n), space O(n)
+    def pre_order_traversal(self, head, result):  # time O(n), space O(n)
         if head is not None:
             result.append(head.value)
             self.pre_order_traversal(head.left, result)
@@ -22,7 +22,7 @@ class Solution:
 
         return result
 
-    def post_order_traversal(self, head, result): # time O(n), space O(n)
+    def post_order_traversal(self, head, result):  # time O(n), space O(n)
         if head is not None:
             self.post_order_traversal(head.left, result)
             self.post_order_traversal(head.right, result)

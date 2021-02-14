@@ -13,5 +13,4 @@ class Solution:
         encoded_string.append(str(counter))
         encoded_string.append(string[len(string) - 1])
 
-        return ''.join(encoded_string)
-
+        return "".join(encoded_string)

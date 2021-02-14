@@ -1,5 +1,5 @@
 class Solution:
-    def bubble_sort(self, array): # time O(average = n2, best = n), space O(1)
+    def bubble_sort(self, array):  # time O(average = n2, best = n), space O(1)
         is_sorted = False
         counter = 0
         while not is_sorted:

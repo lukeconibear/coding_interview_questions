@@ -5,24 +5,26 @@ class Node:
 
     def __repr__(self):
         result = []
-        result.append(f'{self.value}')
+        result.append(f"{self.value}")
         while self.next is not None:
-            result.append(f'{self.next.value}')
+            result.append(f"{self.next.value}")
             self.next = self.next.next
 
-        return ''.join(result)
+        return "".join(result)
+
 
 class Solution:
-    def remove_duplicates(self, head): # time O(n), space O(1)
+    def remove_duplicates(self, head):  # time O(n), space O(1)
         current_node = head
         while current_node is not None:
             next_non_duplicated_node = current_node.next
-            while next_non_duplicated_node is not None and next_non_duplicated_node.value == current_node.value:
+            while (
+                next_non_duplicated_node is not None
+                and next_non_duplicated_node.value == current_node.value
+            ):
                 next_non_duplicated_node = next_non_duplicated_node.next
 
-            current_node.next = next_non_duplicated_node
-            current_node = next_non_duplicated_node
+            current_node.next = next_non_duplicated_node  # for the next pointer
+            current_node = next_non_duplicated_node  # for the next iteration to ensure all nodes only checked once
 
         return head
-
-

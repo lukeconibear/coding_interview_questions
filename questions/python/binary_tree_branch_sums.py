@@ -2,10 +2,11 @@ class Node:
     def __init__(self, value, left=None, right=None):
         self.value = value
         self.left = left
-        self.right = right 
+        self.right = right
+
 
 class Solution:
-    def branch_sums(self, head): # time O(n), space O(n)
+    def branch_sums(self, head):  # time O(n), space O(n)
         sums = []
         self.calculate_branch_sums(head, 0, sums)
         return sums

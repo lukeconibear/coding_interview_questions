@@ -1,9 +1,9 @@
 class Solution:
-    def task_assignment(self, k, tasks): # time O(nlgn), space O(n)
+    def task_assignment(self, k, tasks):  # time O(nlgn), space O(n)
         paired_tasks = []
         task_durations_as_indices = self.get_task_durations_as_indices(tasks)
         sorted_tasks = sorted(tasks)
-        for index in range(k): # as k pairs
+        for index in range(k):  # as k pairs
             task_one_sorted_index = index
             task_two_sorted_index = len(tasks) - (index + 1)
 
@@ -19,7 +19,6 @@ class Solution:
             paired_tasks.append([task_one_index, task_two_index])
 
         return paired_tasks
-
 
     def get_task_durations_as_indices(self, tasks):
         task_durations_as_indices = {}

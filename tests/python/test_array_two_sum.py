@@ -2,7 +2,7 @@ import os
 import sys
 import unittest
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 from questions.python.array_two_sum import Solution
 
 
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
         self.assertTrue(result == [4, 6] or result == [6, 4])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

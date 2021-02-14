@@ -2,7 +2,7 @@ import os
 import sys
 import unittest
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 from questions.python.binary_tree_branch_sums import Node, Solution
 
 
@@ -21,5 +21,5 @@ class Test(unittest.TestCase):
         self.assertEqual(Solution().branch_sums(head), [15, 16, 18, 10, 11])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

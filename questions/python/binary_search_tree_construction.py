@@ -4,7 +4,7 @@ class Node:
         self.left = left
         self.right = right
 
-    def insert(self, value): # time O(average = lgn, worst = n), space O(1)
+    def insert(self, value):  # time O(average = lgn, worst = n), space O(1)
         current_node = self
         while True:
             if value < current_node.value:
@@ -19,10 +19,10 @@ class Node:
                     break
                 else:
                     current_node = current_node.right
-        
+
         return self
 
-    def contains(self, value): # time O(average = lgn, worst = n), space O(1)
+    def contains(self, value):  # time O(average = lgn, worst = n), space O(1)
         current_node = self
         while current_node is not None:
             if value < current_node.value:
@@ -34,7 +34,9 @@ class Node:
 
         return False
 
-    def remove(self, value, parent_node=None): # time O(average = lgn, worst = n), space O(1)
+    def remove(
+        self, value, parent_node=None
+    ):  # time O(average = lgn, worst = n), space O(1)
         current_node = self
         while current_node is not None:
             if value < current_node.value:
@@ -57,7 +59,7 @@ class Node:
                         current_node.left = current_node.right.left
                         current_node.right = current_node.right.right
                     else:
-                        pass # single node
+                        pass  # single node
                 elif parent_node.left == current_node:
                     if current_node.left is not None:
                         current_node.left = current_node.left
@@ -78,6 +80,3 @@ class Node:
             current_node = current_node.left
 
         return current_node.value
-
-
-

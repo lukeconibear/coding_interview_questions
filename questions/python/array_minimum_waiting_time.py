@@ -1,5 +1,5 @@
 class Solution:
-    def minimum_waiting_time(self, queries): # time O(nlgn), space O(n)
+    def minimum_waiting_time(self, queries):  # time O(nlgn), space O(n)
         queries.sort()
         waiting_time = 0
         for index, duration in enumerate(queries):

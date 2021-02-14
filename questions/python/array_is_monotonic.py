@@ -1,5 +1,5 @@
 class Solution:
-    def is_monotonic(self, array): # time O(n), space O(1)
+    def is_monotonic(self, array):  # time O(n), space O(1)
         is_monotonic_increasing = True
         is_monotonic_decreasing = True
         for index in range(1, len(array)):

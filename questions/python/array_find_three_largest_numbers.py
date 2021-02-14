@@ -1,5 +1,5 @@
 class Solution:
-    def find_three_largest_numbers_sort(self, array): # time O(nlgn), space O(1)
+    def find_three_largest_numbers_sort(self, array):  # time O(nlgn), space O(1)
         three_largest = [array[0], array[1], array[2]]
         three_largest.sort()
         for num in array[3:]:
@@ -12,10 +12,10 @@ class Solution:
                 three_largest[1] = num
             elif num > three_largest[0]:
                 three_largest[0] = num
-            
+
         return three_largest
 
-    def find_three_largest_numbers_no_sort(self, array): # time O(n), space O(1)
+    def find_three_largest_numbers_no_sort(self, array):  # time O(n), space O(1)
         three_largest = [None, None, None]
         for num in array:
             self.update_largest(three_largest, num)

@@ -12,10 +12,10 @@ class TreeInfo:
 
 
 class Solution:
-    def get_diameter(self, head): # time O(n), space O(d)
+    def get_diameter(self, head):  # time O(n), space O(d)
         return self.get_tree_info(head).diameter
 
-    def get_tree_info(self, head): 
+    def get_tree_info(self, head):
         if head is None:
             return TreeInfo(0, 0)
 
@@ -28,4 +28,3 @@ class Solution:
         current_height = 1 + max(left_info.height, right_info.height)
 
         return TreeInfo(current_height, current_diameter)
-        

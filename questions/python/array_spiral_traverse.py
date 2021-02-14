@@ -1,5 +1,5 @@
 class Solution:
-    def spiral_traverse(self, array): # time O(n), space O(n)
+    def spiral_traverse(self, array):  # time O(n), space O(n)
         result = []
         start_row = 0
         start_col = 0
@@ -13,13 +13,13 @@ class Solution:
                 result.append(array[row][end_col])
 
             for col in reversed(range(start_col, end_col)):
-                if start_row == end_row: # single row in middle
+                if start_row == end_row:  # single row in middle
                     break
 
                 result.append(array[end_row][col])
 
             for row in reversed(range(start_row + 1, end_row)):
-                if start_col == end_col: # single col in middle
+                if start_col == end_col:  # single col in middle
                     break
 
                 result.append(array[row][start_col])

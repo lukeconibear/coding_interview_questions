@@ -2,7 +2,7 @@ import os
 import sys
 import unittest
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 from questions.python.binary_search_tree_traversal import Node, Solution
 
 
@@ -16,10 +16,16 @@ class Test(unittest.TestCase):
         head.right = Node(15)
         head.right.right = Node(22)
 
-        self.assertEqual(Solution().in_order_traversal(head, []), [1, 2, 5, 5, 10, 15, 22])
-        self.assertEqual(Solution().pre_order_traversal(head, []), [10, 5, 2, 1, 5, 15, 22])
-        self.assertEqual(Solution().post_order_traversal(head, []), [1, 2, 5, 5, 22, 15, 10])
+        self.assertEqual(
+            Solution().in_order_traversal(head, []), [1, 2, 5, 5, 10, 15, 22]
+        )
+        self.assertEqual(
+            Solution().pre_order_traversal(head, []), [10, 5, 2, 1, 5, 15, 22]
+        )
+        self.assertEqual(
+            Solution().post_order_traversal(head, []), [1, 2, 5, 5, 22, 15, 10]
+        )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

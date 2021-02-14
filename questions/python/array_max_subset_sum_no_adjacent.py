@@ -1,5 +1,5 @@
 class Solution:
-    def max_subset_sum_no_adjacent(self, array): # time O(n), space O(1)
+    def max_subset_sum_no_adjacent(self, array):  # time O(n), space O(1)
         if len(array) == 0:
             return 0
         elif len(array) == 1:

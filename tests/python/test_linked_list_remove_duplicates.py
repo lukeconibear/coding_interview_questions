@@ -2,7 +2,7 @@ import os
 import sys
 import unittest
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 from questions.python.linked_list_remove_duplicates import Node, Solution
 
 
@@ -26,5 +26,5 @@ class Test(unittest.TestCase):
         self.assertEqual(print(Solution().remove_duplicates(head)), print(result))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

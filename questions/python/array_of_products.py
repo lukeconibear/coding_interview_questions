@@ -1,5 +1,5 @@
 class Solution:
-    def products(self, array): # time O(n), space O(n)
+    def products(self, array):  # time O(n), space O(n)
         total_product = 1
         index_zero = 0
         num_zeros = 0

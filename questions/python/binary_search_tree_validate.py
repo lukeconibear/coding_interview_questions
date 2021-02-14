@@ -4,9 +4,10 @@ class Node:
         self.left = left
         self.right = right
 
+
 class Solution:
-    def validate_bst(self, head): # time O(n), space O(d)
-        return self.validate_bst_helper(head, float('-inf'), float('inf'))
+    def validate_bst(self, head):  # time O(n), space O(d)
+        return self.validate_bst_helper(head, float("-inf"), float("inf"))
 
     def validate_bst_helper(self, head, min_value, max_value):
         if head is None:

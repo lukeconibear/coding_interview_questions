@@ -1,10 +1,12 @@
 class Solution:
-    def find_smallest_difference(self, array_one, array_two): # time O(nlgn + mlgm), space O(1)
+    def find_smallest_difference(
+        self, array_one, array_two
+    ):  # time O(nlgn + mlgm), space O(1)
         array_one.sort()
         array_two.sort()
         index_one = 0
         index_two = 0
-        smallest_difference = float('inf')
+        smallest_difference = float("inf")
         while index_one < len(array_one) and index_two < len(array_two):
             num_one = array_one[index_one]
             num_two = array_two[index_two]

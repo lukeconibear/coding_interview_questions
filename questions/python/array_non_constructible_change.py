@@ -1,5 +1,5 @@
 class Solution:
-    def non_constructible_change(self, coins): # time O(nlgn), space O(1)
+    def non_constructible_change(self, coins):  # time O(nlgn), space O(1)
         coins.sort()
 
         current_change_made = 0
